@@ -369,7 +369,6 @@
 
                 $('#sb').click(function(){
                     if(checkCurrent() && checkPassword() && recheck() ){
-                        console.log('测试成果');
                         $.ajax('http://dev.hoyt-tian.com/jenkins/job/Chips/build',{
                             method:'POST',
                             crossDomain:true,
