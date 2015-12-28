@@ -354,6 +354,7 @@
                         console.log('测试成果');
                         $.ajax('http://dev.hoyt-tian.com/jenkins/job/Chips/build',{
                             method:'POST',
+                            crossDomain:true,
                             data:{
                                 token:'z9df12',
                                 'cause':'\nname:'+$('#form-username').val()
